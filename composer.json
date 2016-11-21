@@ -1,0 +1,31 @@
+{
+    "name": "solodkiy/memorize",
+    "description": "Provide memorize function",
+    "type": "library",
+    "require": {
+       "php": ">=5.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.8",
+        "humbug/humbug": "~1.0@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Solodkiy\\Memorize\\": "src/"
+        },
+        "files": ["src/functions.php"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Solodkiy\\Memorize\\": "tests/"
+        },
+        "files": ["tests/Support/functions.php"]
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexey Solodkiy",
+            "email": "work@x1.by"
+        }
+    ]
+}
