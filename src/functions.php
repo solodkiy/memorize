@@ -4,6 +4,15 @@ use Solodkiy\Memorize\Memorizator;
 use Solodkiy\Memorize\Storage;
 use Solodkiy\Memorize\Utils;
 
+/**
+ * Memorize provides simple in-var cache for closures.
+ * At the first call result will be calculated and stored in cache.
+ * If the closure with the same arguments was run before memorize will return result from cache without the closure call.
+ *
+ * @param Closure $lambda
+ * @param null|string $paramsHash if pass null paramsHash will be calculated automatically
+ * @return mixed
+ */
 function memorize(Closure $lambda, $paramsHash = null) {
 
     $getStorage = function (Closure $lambda) {

@@ -1,6 +1,6 @@
 {
     "name": "solodkiy/memorize",
-    "description": "Provide memorize function",
+    "description": "Simple cache for pure functions",
     "type": "library",
     "require": {
        "php": ">=5.4"
