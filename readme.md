@@ -1,6 +1,8 @@
 Memorize
 --------
 
+Memorize is php analog of python [@lazy decorator](https://pypi.python.org/pypi/lazy).
+
 Memorize provides simple in-var cache for closures. It can be used to create lazy functions. 
 Function takes closure and optional argument paramsHash.
 If the closure with the same arguments was run before memorize will return result from cache without the closure call. At the first call result will be calculated and stored in cache.
