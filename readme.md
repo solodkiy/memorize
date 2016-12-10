@@ -14,6 +14,12 @@ Memorize automatically calculates paramsHash for closures with scalar arguments.
 
 Notice that memorize calculates closure hash by file name, start line and end line of closure declaration. Memorize will not work correctly if you declare two closures in one line (e.g: after code obfuscation).
 
+Install
+-------
+```
+composer require solodkiy/memorize
+```
+
 Examples
 --------
 
