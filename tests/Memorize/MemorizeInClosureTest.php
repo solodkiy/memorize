@@ -14,14 +14,14 @@ class MemorizeInClosureTest extends \PHPUnit_Framework_TestCase
 
     public function testMemorizeWithGuessParameters()
     {
-        $function1 = function ($number)  {
+        $function1 = function ($number) {
             return memorize(function () use ($number) {
                 $this->workLog[] = 'a '. $number;
                 return $number;
             });
         };
 
-        $function2 = function ($number)  {
+        $function2 = function ($number) {
             return memorize(function () use ($number) {
                 $this->workLog[] = 'b '.$number;
                 return $number;
@@ -54,7 +54,5 @@ class MemorizeInClosureTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(100, count($numbers));
         $this->assertEquals(10, count($this->workLog));
         $this->assertEquals(10, count(array_unique($numbers)));
-
     }
-
 }

@@ -19,7 +19,3 @@ function factorial($number)
             : $number * factorial($number - 1);
     });
 }
-
-
-
-

@@ -3,8 +3,6 @@
 
 namespace Solodkiy\Memorize;
 
-
-
 use Solodkiy\Memorize\Support\ValueObject;
 
 class UtilsTest extends \PHPUnit_Framework_TestCase
@@ -68,7 +66,9 @@ class UtilsTest extends \PHPUnit_Framework_TestCase
     public function testHash()
     {
         $items = [0, null, false, ''];
-        $hashes = array_map(function ($item) { return Utils::hash($item); }, $items);
+        $hashes = array_map(function ($item) {
+            return Utils::hash($item);
+        }, $items);
 
         $this->assertEquals(count(array_unique($hashes)), 4) ;
     }
@@ -77,6 +77,4 @@ class UtilsTest extends \PHPUnit_Framework_TestCase
     {
         $this->assertEquals(Utils::hash(new ValueObject(1)), Utils::hash(new ValueObject(1)));
     }
-
 }
-

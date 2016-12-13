@@ -8,7 +8,6 @@ use Solodkiy\Memorize\Support\StaticFactorialCalculator;
 
 class MemorizeInStaticTest extends \PHPUnit_Framework_TestCase
 {
-
     public function testMemorize()
     {
         // First try
@@ -41,6 +40,4 @@ class MemorizeInStaticTest extends \PHPUnit_Framework_TestCase
         $this->assertSame($first, $second);
         $this->assertInstanceOf('Solodkiy\Memorize\Support\Singleton', $first);
     }
-
-
 }

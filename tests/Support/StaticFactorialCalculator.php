@@ -3,7 +3,6 @@
 
 namespace Solodkiy\Memorize\Support;
 
-
 class StaticFactorialCalculator
 {
     private static $workLog = [];
@@ -31,5 +30,4 @@ class StaticFactorialCalculator
         self::$workLog = [];
         return $log;
     }
-
 }

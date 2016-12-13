@@ -46,6 +46,4 @@ class Storage
         }
         return [false, null];
     }
-
-
 }

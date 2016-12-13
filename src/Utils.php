@@ -3,7 +3,6 @@
 
 namespace Solodkiy\Memorize;
 
-
 use InvalidArgumentException;
 
 class Utils
@@ -68,6 +67,4 @@ class Utils
     {
         return is_object($value) ? get_class($value) : gettype($value);
     }
-
-
 }

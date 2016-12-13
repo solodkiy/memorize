@@ -11,9 +11,8 @@ class Singleton
 
     public static function getInstance()
     {
-        return memorize(function() {
+        return memorize(function () {
             return new Singleton();
         });
     }
 }
-
