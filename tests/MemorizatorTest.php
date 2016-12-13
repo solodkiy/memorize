@@ -119,4 +119,3 @@ class MemorizatorTest extends PHPUnit_Framework_TestCase
         Memorizator::memorize('context', $incorrectLambda, '', new Storage());
     }
 }
-

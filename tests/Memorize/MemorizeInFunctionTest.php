@@ -32,6 +32,4 @@ class MemorizeInFunctionTest extends \PHPUnit_Framework_TestCase
             'factorial(6)'
         ], $workLog);
     }
-
-
 }

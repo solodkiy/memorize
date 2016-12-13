@@ -3,7 +3,6 @@
 
 namespace Solodkiy\Memorize\Support;
 
-
 class FactorialCalculator
 {
     private $workLog = [];
@@ -37,7 +36,6 @@ class FactorialCalculator
                 return ($number == 1)
                     ? 1
                     : $number * $this->factorial($number - 2);
-
             } else {
                 return ($number == 1)
                     ? 1
@@ -55,5 +53,4 @@ class FactorialCalculator
         $this->workLog = [];
         return $log;
     }
-
 }

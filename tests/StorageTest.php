@@ -3,7 +3,6 @@
 
 namespace Solodkiy\Memorize;
 
-
 use Doctrine\Instantiator\Exception\InvalidArgumentException;
 
 class StorageTest extends \PHPUnit_Framework_TestCase
@@ -48,7 +47,6 @@ class StorageTest extends \PHPUnit_Framework_TestCase
         $this->assertTrue($storage->has('item1', 100));
         $this->assertFalse($storage->has('item1', 101));
         */
-
     }
 
     /**
@@ -59,5 +57,4 @@ class StorageTest extends \PHPUnit_Framework_TestCase
         $storage = new Storage();
         $this->assertEquals('value', $storage->get('item1', ''));
     }
-
 }

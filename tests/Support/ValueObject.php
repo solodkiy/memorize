@@ -3,7 +3,6 @@
 
 namespace Solodkiy\Memorize\Support;
 
-
 class ValueObject
 {
     /**
@@ -28,5 +27,4 @@ class ValueObject
     {
         return md5($this->val);
     }
-
 }

@@ -13,8 +13,8 @@ use Solodkiy\Memorize\Utils;
  * @param null|string $paramsHash if pass null paramsHash will be calculated automatically
  * @return mixed
  */
-function memorize(Closure $lambda, $paramsHash = null) {
-
+function memorize(Closure $lambda, $paramsHash = null)
+{
     $getStorage = function (Closure $lambda) {
         $reflection = new ReflectionFunction($lambda);
         $that = $reflection->getClosureThis();
@@ -40,5 +40,3 @@ function memorize(Closure $lambda, $paramsHash = null) {
 
     return Memorizator::memorize($contextName, $lambda, $paramsHash, $getStorage($lambda));
 }
-
-

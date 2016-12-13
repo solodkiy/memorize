@@ -3,7 +3,6 @@
 
 namespace Solodkiy\Memorize;
 
-
 use RuntimeException;
 
 class Memorizator
@@ -62,7 +61,4 @@ class Memorizator
             return $value;
         }
     }
-
-
-
 }

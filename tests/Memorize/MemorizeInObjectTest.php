@@ -9,7 +9,6 @@ use Solodkiy\Memorize\Support\FactorialCalculator;
 
 class MemorizeInObjectTest extends \PHPUnit_Framework_TestCase
 {
-
     public function testMemorize()
     {
         $object = new FactorialCalculator();
@@ -115,6 +114,4 @@ class MemorizeInObjectTest extends \PHPUnit_Framework_TestCase
             return rand(1, 1000000);
         });
     }
-
-
 }
