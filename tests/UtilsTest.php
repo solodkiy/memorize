@@ -31,7 +31,7 @@ class UtilsTest extends \PHPUnit_Framework_TestCase
             return 1;
         });
 
-        $this->assertEquals('c:'.__FILE__.'-32-34', $string);
+        $this->assertEquals('c:'.__FILE__.'-30-32', $string);
     }
 
     /**
