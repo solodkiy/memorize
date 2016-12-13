@@ -1,6 +1,8 @@
 Memorize
 --------
 [![Build Status](https://travis-ci.org/Solodkiy/memorize.svg?branch=master)](https://travis-ci.org/Solodkiy/memorize)
+[![Latest Stable Version](https://poser.pugx.org/solodkiy/memorize/v/stable)](https://packagist.org/packages/solodkiy/memorize)
+[![Total Downloads](https://poser.pugx.org/solodkiy/memorize/downloads)](https://packagist.org/packages/solodkiy/memorize)
 
 Memorize is php analog of python [@lazy decorator](https://pypi.python.org/pypi/lazy).
 
